@@ -7,9 +7,9 @@
 ```R
 variable=c(1:10)
 variable=c(1,2,3)
-variable=c(“a”,”b”)
+variable=c("a","b")
 ```
-+ `names()`用于给向量附名
++ `names()`用于给向量赋名
 
 ` names(vector)=c(a,b,c)`
 
