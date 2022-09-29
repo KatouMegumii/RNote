@@ -276,6 +276,8 @@ mean(us_visitors)
 
 ```
 
+------
+
 ## 关于factor ##
 
 + ### factor和vector的区别
