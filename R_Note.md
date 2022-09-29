@@ -1,15 +1,15 @@
-## 2022/09/29 ##
+# 2022/09/29 #
 
 ------
 
-#### 关于vector ####
-+ 几种声明变量的方式
+## 关于vector ##
+- ### 几种声明变量的方式
 ```R
 variable=c(1:10)
 variable=c(1,2,3)
 variable=c("a","b")
 ```
-+ `names()`用于给向量赋名
+- ### `names()`用于给向量赋名
 
 ` names(vector)=c(a,b,c)`
 
@@ -18,7 +18,7 @@ variable=c("a","b")
 name=c(a,b,c)
 names(vector)=c(name)
 ```
-+ 向量可以进行运算，如
++ ### 向量可以进行运算，如
 ```R
 poker_vector <- c(140, -50, 20, -120, 240)
 roulette_vector <- c(-24, -50, 100, -350, 10)
@@ -27,13 +27,13 @@ names(poker_vector) <- days_vector
 names(roulette_vector) <- days_vector
 total_daily <- poker_vector+roulette_vector
 ```
-+ 选择向量中的具体值
++ ### 选择向量中的具体值
 ````R
 vector[1] 
 vector[1,2]
 vector[1:3]
 ````
-+ 不等号可直接用于比较变量并输出布尔值
++ ### 不等号可直接用于比较变量并输出布尔值
 ````R
 fruitA_Num=8
 fruitB_Num=10
@@ -48,7 +48,7 @@ fruitA_Num>fruitB_Num
 
 
 
-- 一个关于筛选向量内符合条件内容并输出的例子
+- ### 一个关于筛选向量内符合条件内容并输出的例子
 
 ```R
 # Poker and roulette winnings from Monday to Friday:
@@ -74,15 +74,15 @@ Wednesday    Friday
       100        10 
 ```
 
-- 一些可以用来进行统计学计算的内容
+- ### 一些可以用来进行统计学计算的内容
 
 `sum()` 可以用来计算和 ` mean()` 可以用来计算平均数
 
 ------
 
-#### 关于Matrix ####
+## 关于Matrix ##
 
-+ 构建一个矩阵
++ ### 构建一个矩阵
 
 使用`matrix()` 来构建矩阵 ，`byrow`用来表示按列填充，`nrow`用来表示矩阵行数
 
@@ -100,7 +100,7 @@ matrix(1:9,byrow=TRUE,nrow=3)
 [3,]    7    8    9
 ```
 
-+ 将vector合并成矩阵
++ ### 将vector合并成矩阵
 
 ```R
 # Box office Star Wars (in millions!)
@@ -126,7 +126,7 @@ star_wars_matrix
 [3,] 309.306 165.8
 ```
 
-+ 给矩阵的行和列命名
++ ### 给矩阵的行和列命名
 
 `rownames()` `colnames()` 
 
@@ -163,7 +163,7 @@ The Empire Strikes Back 290.475  247.9
 Return of the Jedi      309.306  165.8
 ```
 
-+ 另一种给矩阵行列命名的方式
++ ### 另一种给矩阵行列命名的方式
 
 直接使用`dimnames=list()`进行命名
 
@@ -187,7 +187,7 @@ Return of the Jedi      309.306  165.8
 
 ```
 
-+ 合并矩阵和矩阵求和
++ ### 合并矩阵和矩阵求和
 
 `rowSums()`按行求和，同理`colSums()`是按列求和
 
@@ -221,7 +221,7 @@ The Empire Strikes Back 290.475  247.9          538.375
 Return of the Jedi      309.306  165.8          475.106
 ```
 
-+ 选择矩阵内元素
++ ### 选择矩阵内元素
 
 `my_matrix[r,c]`选择第r行第c列的一个元素
 
@@ -231,7 +231,7 @@ Return of the Jedi      309.306  165.8          475.106
 
 `my_matrix[r,]`选择第r行元素
 
-+ 矩阵的运算
++ ### 矩阵的运算
 
 `mean()`依然适用，同时矩阵可以和自然数和矩阵之间发生运算
 
@@ -276,9 +276,9 @@ mean(us_visitors)
 
 ```
 
-#### 关于factor ####
+## 关于factor ##
 
-+ factor和vector的区别
++ ### factor和vector的区别
 
 factor拥有属性`Levels` ，我个人理解为更适合统计学使用的纯粹值，使用`factor()`可将vector转换成factor
 
