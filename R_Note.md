@@ -84,7 +84,7 @@ Wednesday    Friday
 
 + 构建一个矩阵
 
-使用` matrix()` 来构建矩阵 ，`byrow`用来表示按列填充，`nrow`用来表示矩阵行数
+使用`matrix()` 来构建矩阵 ，`byrow`用来表示按列填充，`nrow`用来表示矩阵行数
 
 ```R
 matrix(1:9,byrow=TRUE,nrow=3)
