@@ -317,12 +317,30 @@ Levels: Female Male
 
 + ### 如何在计算中忽略缺失值
 
-  `na.rm`即remove NA，用于在函数中声明忽略确实值
+`na.rm`即remove NA，用于在函数中声明忽略确实值
 
-  ```R
-  summarise(flights, delay = mean(dep_delay, na.rm = TRUE))
-  ```
+```R
+summarise(flights, delay = mean(dep_delay, na.rm = TRUE))
+```
 
-  此函数中声明将缺失值排除，则可以返回正确的平均数，否则会返回` NA `
+此函数中声明将缺失值排除，则可以返回正确的平均数，否则会返回` NA `
 
   
+
+**未完待续**
+
+
+
+## 管道传参%>%
+
++ ### 管道函数`%>%`
+
+来自于包`dplyr`，可以将前一步的结果直接传递给下一步，从而跳过赋值
+
+假设我们需要计算如下函数在 $ x=4 $
+$$
+f(x)=sin(x+1)^2
+$$
+
+
+
