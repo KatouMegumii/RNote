@@ -1,4 +1,4 @@
-# 2022/09/29 #
+# 来自Datacamp的内容 #
 
 ------
 
@@ -80,7 +80,7 @@ Wednesday    Friday
 
 ------
 
-## 关于Matrix ##
+## 关于matrix ##
 
 + ### 构建一个矩阵
 
@@ -307,17 +307,23 @@ factor_sex_vector
 Levels: Female Male
 ```
 
-# 2022/10/13
+# 来自70011 Lab的内容和一些补充
 
 ------
 
 部分内容来自70011的Lab 2&3，[R语言笔记-缺失值的处理](https://blog.csdn.net/ethmery/article/details/109152730)，[心惊梦醒的笔记](https://www.jianshu.com/p/66118f431bf6)，以及[R语言中的管道](https://www.jianshu.com/p/c65dbce983dd)
 
-## 缺失值的处理
+## 初步的数据处理
 
-+ ### 如何在计算中忽略缺失值
++ ### 关于缺失值的一些操作
 
 `na.rm`即remove NA，用于在函数中声明忽略确实值
+
+## 关于分组和`summarise()`
+
++ ### 数据的分组
+
+`group_by()`
 
 ```R
 summarise(flights, delay = mean(dep_delay, na.rm = TRUE))
