@@ -307,3 +307,22 @@ factor_sex_vector
 Levels: Female Male
 ```
 
+# 2022/10/13
+
+------
+
+## 缺失值的处理
+
+部分内容来自70011的Lab 2&3以及[R语言笔记-缺失值的处理](https://blog.csdn.net/ethmery/article/details/109152730)
+
++ ### 如何在计算中忽略缺失值
+
+  `na.rm`即remove NA，用于在函数中声明忽略确实值
+
+  ```R
+  summarise(flights, delay = mean(dep_delay, na.rm = TRUE))
+  ```
+
+  此函数中声明将缺失值排除，则可以返回正确的平均数，否则会返回` NA `
+
+  
