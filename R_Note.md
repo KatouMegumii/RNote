@@ -33,7 +33,7 @@ vector[1]
 vector[1,2]
 vector[1:3]
 ````
-+ ### 不等号可直接用于比较变量并输出布尔值
++ <h3 id="1">不等号可直接用于比较变量并输出布尔值</h3>
 ````R
 fruitA_Num=8
 fruitB_Num=10
@@ -313,11 +313,26 @@ Levels: Female Male
 
 部分内容来自70011的Lab 2&3，[R语言笔记-缺失值的处理](https://blog.csdn.net/ethmery/article/details/109152730)，[心惊梦醒的笔记](https://www.jianshu.com/p/66118f431bf6)，以及[R语言中的管道](https://www.jianshu.com/p/c65dbce983dd)
 
-## 初步的数据处理
+## 关于数据清洗的函数
 
-+ ### 关于缺失值的一些操作
++ ### 关于缺失值
 
-`na.rm`即remove NA，用于在函数中声明忽略确实值
+`na.rm`即remove NA，用于在函数中声明忽略缺失值，如数据中存在缺失值，部分函数只可对非缺失值进行运算，因此如果不提前将缺失值排除，会在最后的结果中返回`NA`
+
++ ### 筛选函数`filter()` 
+
+第一个参数为需要筛选的数据框，第二个以后的参数是需要筛选的条件，返回值是一个数据框
+
+```R
+#对数据框flights筛选出1月1日的航班数据
+filter(flights,month==1,day==1)
+```
+
+第二个及以后的参数需要是一个表达式，关于表达式的内容可以参照[前文](#1)
+
+
+
+------
 
 ## 关于分组和`summarise()`
 
@@ -329,13 +344,13 @@ Levels: Female Male
 summarise(flights, delay = mean(dep_delay, na.rm = TRUE))
 ```
 
-此函数中声明将缺失值排除，则可以返回正确的平均数，否则会返回` NA `
-
   
 
 **未完待续**
 
 
+
+------
 
 ## 管道传参
 
