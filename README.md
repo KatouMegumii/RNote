@@ -1,6 +1,6 @@
 # RNote
 
-学习R语言的个人笔记，主要参考datacamp和SOSY70011课程中的内容，并从其他笔记中选取相关内容进行补充。
+学习R语言的个人笔记，主要参考datacamp和SOST70011课程中的内容，并从其他笔记中选取相关内容进行补充。
 
 Individually notes on learning R programing and writtern in Chinese.
 
