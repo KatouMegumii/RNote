@@ -1,38 +1,24 @@
-# 来自Datacamp的内容 #
+# R的基础内容-主要参考datacamp #
 
 ------
 
-## 关于vector ##
+## 基础函数和表达式
+
 - ### 几种声明变量的方式
+
 ```R
+#正统的赋值方式 ->
+x -> variable=c(1:10)
+#在IDE中可以使用=达到相同的效果
 variable=c(1:10)
 variable=c(1,2,3)
 variable=c("a","b")
 ```
-- ### `names()`用于给向量赋名
 
-` names(vector)=c(a,b,c)`
+- ### 一些可以用来进行统计学计算的内容
 
-或者是
-```R
-name=c(a,b,c)
-names(vector)=c(name)
-```
-+ ### 向量可以进行运算，如
-```R
-poker_vector <- c(140, -50, 20, -120, 240)
-roulette_vector <- c(-24, -50, 100, -350, 10)
-days_vector <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
-names(poker_vector) <- days_vector
-names(roulette_vector) <- days_vector
-total_daily <- poker_vector+roulette_vector
-```
-+ ### 选择向量中的具体值
-````R
-vector[1] 
-vector[1,2]
-vector[1:3]
-````
+`sum()` 可以用来计算和 ` mean()` 可以用来计算平均数
+
 + <h3 id="1">关于表达式：赋值，比较运算符和输出值</h3>
 
 R可以通过比较运算符直接输出一个布尔值
@@ -87,6 +73,31 @@ R可以对对象进行逻辑运算，且逻辑运算符可以组合，具体运�
 
 ![](https://s3.bmp.ovh/imgs/2022/10/17/1f99f7f9eb3d53c1.png)
 
+## 关于vector：如何创建和处理向量 ##
+- ### `names()`用于给向量赋名
+
+` names(vector)=c(a,b,c)`
+
+或者是
+```R
+name=c(a,b,c)
+names(vector)=c(name)
+```
++ ### 向量可以进行运算，如
+```R
+poker_vector <- c(140, -50, 20, -120, 240)
+roulette_vector <- c(-24, -50, 100, -350, 10)
+days_vector <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+names(poker_vector) <- days_vector
+names(roulette_vector) <- days_vector
+total_daily <- poker_vector+roulette_vector
+```
++ ### 选择向量中的具体值
+````R
+vector[1] 
+vector[1,2]
+vector[1:3]
+````
 - ### 一个关于筛选向量内符合条件内容并输出的例子
 
 ```R
@@ -113,13 +124,9 @@ Wednesday    Friday
       100        10 
 ```
 
-- ### 一些可以用来进行统计学计算的内容
-
-`sum()` 可以用来计算和 ` mean()` 可以用来计算平均数
-
 ------
 
-## 关于matrix ##
+## 关于matrix：矩阵的创建、合并和运算 ##
 
 + ### 构建一个矩阵
 
@@ -339,7 +346,7 @@ mean(us_visitors)
 
 ------
 
-## 关于factor ##
+## 关于factor：未完待续 ##
 
 + ### factor和vector的区别
 
@@ -368,7 +375,7 @@ factor_sex_vector
 Levels: Female Male
 ```
 
-# 来自70011 Lab的内容和一些补充
+# R数据处理实操-主要来自SOST70011
 
 ------
 
@@ -391,7 +398,15 @@ filter(flights,month==1,day==1)
 
 第二个及以后的参数需要是一个表达式，关于表达式的内容可以参照[前文](#1)
 
-同时该函数还可以使用逻辑运算，关于逻辑运算的内容依然参照[前文](#2)
+同时该函数还可以使用逻辑运算，关于逻辑运算的内容依然参照[前文](#2)，相同的筛选条件通过不同的逻辑运算得到的结果最后是一致的
+
+```R
+#如通过不同的表达筛选出延迟时间在2小时以内的航班
+#直接筛选delay<=120的数据
+filter(flights, arr_delay <= 120, dep_delay <= 120)
+#筛选delay>120的数据取非
+filter(flights, !(arr_delay > 120 | dep_delay > 120))
+```
 
 
 
