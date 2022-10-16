@@ -73,7 +73,17 @@ near(x, y, tol = .Machine$double.eps^0.5)
 x,y分别是两个浮点数或浮点数向量，tol参数是比较时的容错
 ```
 
++ <h3 id="2">关于逻辑运算：运算符和含义</h3>
 
+R可以对对象进行逻辑运算，且逻辑运算符可以组合，具体运算符如下：
+
+`&` 与（and），`A&B`在统计学上表示集合A和集合B的交集
+
+`|` 或（or），`A|B`在统计学上表示集合A和集合B的并集
+
+`!` 非（not），`!A`在统计学上表示集合A的补集
+
+`xor`异或（exclusive or），`xor(A,B)`在统计学上表示集合AB的交集与补集差，即![](http://latex.codecogs.com/svg.latex?(\bar{A} \cap B)\cup (A\cap \bar{B} ))![](https://s3.bmp.ovh/imgs/2022/10/17/dbd913d962315f65.png){:height="20%" width="20%"}
 
 - ### 一个关于筛选向量内符合条件内容并输出的例子
 
@@ -303,6 +313,28 @@ mean(us_visitors)
 
 ```
 
+**注意：**对于数学运算符号，如加减乘除，需要保证两组矩阵的大小完全一致，因为在R内，这种运算代表每一个矩阵位置上的元素进行相应的运算，如果想使用矩阵内积，即完成![](http://latex.codecogs.com/svg.latex?N*P)和![](http://latex.codecogs.com/svg.latex?P*M)矩阵的乘积并最后输出![](http://latex.codecogs.com/svg.latex?N*M)矩阵的话，需要使用运算符`%*%`
+
+```R
+#如正确计算离散分布的平均数
+> x=matrix(1:4,byrow=TRUE,nrow=1)
+  p=matrix(c(0.25,0.125,0.375,0.25),byrow=FALSE,nrow = 4,ncol = 1)
+  E_X=x%*%p
+  print(E_X)
+      [,1]
+[1,] 2.625
+
+#如直接使用运算符*
+> x=matrix(1:4,byrow=TRUE,nrow=1)
+  p=matrix(c(0.25,0.125,0.375,0.25),byrow=FALSE,nrow = 4,ncol = 1)
+  E_X=x*p
+  print(E_X)
+[Warning]x * p 中的错误 (Statistics Assessment.R): non-conformable arrays
+#non-comformable arrays即两个矩阵大小不同
+```
+
+
+
 ------
 
 ## 关于factor ##
@@ -357,7 +389,7 @@ filter(flights,month==1,day==1)
 
 第二个及以后的参数需要是一个表达式，关于表达式的内容可以参照[前文](#1)
 
-
+同时该函数还可以使用逻辑运算，关于逻辑运算的内容依然参照[前文](#2)
 
 ------
 
