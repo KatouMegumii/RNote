@@ -83,7 +83,9 @@ R可以对对象进行逻辑运算，且逻辑运算符可以组合，具体运�
 
 `!` 非（not），`!A`在统计学上表示集合A的补集
 
-`xor`异或（exclusive or），`xor(A,B)`在统计学上表示集合AB的交集与补集差，即<img src="https://s3.bmp.ovh/imgs/2022/10/17/dbd913d962315f65.png" style="zoom: 33%;" />
+`xor`异或（exclusive or），`xor(A,B)`在统计学上表示集合AB的交集与补集差，即<img src="https://latex.codecogs.com/svg.image?(\overline{A}\cap&space;B)\cup&space;(A\cap&space;\overline{B})" title="https://latex.codecogs.com/svg.image?(\overline{A}\cap B)\cup (A\cap \overline{B})" />
+
+![](https://s3.bmp.ovh/imgs/2022/10/17/3f44313b5f880ce4.png)
 
 - ### 一个关于筛选向量内符合条件内容并输出的例子
 
@@ -390,6 +392,8 @@ filter(flights,month==1,day==1)
 第二个及以后的参数需要是一个表达式，关于表达式的内容可以参照[前文](#1)
 
 同时该函数还可以使用逻辑运算，关于逻辑运算的内容依然参照[前文](#2)
+
+
 
 ------
 
