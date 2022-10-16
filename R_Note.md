@@ -85,7 +85,7 @@ R可以对对象进行逻辑运算，且逻辑运算符可以组合，具体运�
 
 `xor`异或（exclusive or），`xor(A,B)`在统计学上表示集合AB的交集与补集差，即<img src="https://latex.codecogs.com/svg.image?(\overline{A}\cap&space;B)\cup&space;(A\cap&space;\overline{B})" title="https://latex.codecogs.com/svg.image?(\overline{A}\cap B)\cup (A\cap \overline{B})" />
 
-<img src="https://s3.bmp.ovh/imgs/2022/10/17/3f44313b5f880ce4.png" style="zoom:50%;" />
+![](https://s3.bmp.ovh/imgs/2022/10/17/1f99f7f9eb3d53c1.png)
 
 - ### 一个关于筛选向量内符合条件内容并输出的例子
 
