@@ -1,16 +1,15 @@
 # RNote
 
 **READ THE MARKDOWN FILE **
-[Chapter1 Basic of R](https://github.com/KatouMegumii/RNote/blob/master/RNote1%5BBasic%20of%20R%5D.md)
-[Chapter2 Vector, Matrix and Factor](https://github.com/KatouMegumii/RNote/blob/master/RNote2%5BVector%2C%20Matrix%20and%20Factor%5D.md)
-[LabNote1 Data Cleaning](https://github.com/KatouMegumii/RNote/blob/master/RLabNote1%5BCleaning%20Data%5D.md)
-[LabNote2 Summary Statistics](https://github.com/KatouMegumii/RNote/blob/master/RLabNote2%5BSummary%20Statistics%5D.md)
-[LabNote3 Hypothesis Testing](https://github.com/KatouMegumii/RNote/blob/master/RLabNote3%5BHypothesis%20Testing%5D.md)
 
-Individually notes on learning R programing and writtern in Chinese.
+[Chapter1 Basic of R](https://github.com/KatouMegumii/RNote/blob/master/RNote1%5BBasic%20of%20R%5D.md)  
+[Chapter2 Vector, Matrix and Factor](https://github.com/KatouMegumii/RNote/blob/master/RNote2%5BVector%2C%20Matrix%20and%20Factor%5D.md)  
+[LabNote1 Data Cleaning](https://github.com/KatouMegumii/RNote/blob/master/RLabNote1%5BCleaning%20Data%5D.md)  
+[LabNote2 Summary Statistics](https://github.com/KatouMegumii/RNote/blob/master/RLabNote2%5BSummary%20Statistics%5D.md)  
+[LabNote3 Hypothesis Testing](https://github.com/KatouMegumii/RNote/blob/master/RLabNote3%5BHypothesis%20Testing%5D.md)  
 
-Based on R Programming track on [Datacamp](https://app.datacamp.com/learn/skill-tracks/r-programming), you can access more via the link.
-
+Individually notes on learning R programing and writtern in Chinese.  
+Based on R Programming track on [Datacamp](https://app.datacamp.com/learn/skill-tracks/r-programming), you can access more via the link.  
 Add more materials from SOST70011 and reference from other tutorials.
 
 Reference：
