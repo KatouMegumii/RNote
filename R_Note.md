@@ -111,7 +111,7 @@ near(x, y, tol = .Machine$double.eps^0.5)
 
 `!` 非（not），`!A`在统计学上表示集合A的补集
 
-`xor`异或（exclusive or），`xor(A,B)`在统计学上表示集合AB的交集与补集差，即 $\overline{A}\cap B)\cup (A\cap \overline{B})\$
+`xor`异或（exclusive or），`xor(A,B)`在统计学上表示集合AB的交集与补集差，即 $(\overline{A}\cap B)\cup (A\cap \overline{B})\$
 
 ![](https://s3.bmp.ovh/imgs/2022/10/17/1f99f7f9eb3d53c1.png)
 
