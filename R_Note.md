@@ -1,6 +1,4 @@
-# R的基础内容-主要参考datacamp #
-
-------
+# R的基础内容-主要参考datacamp
 
 ## 基础函数和表达式
 
@@ -15,8 +13,6 @@ variable=c(1,2,3)
 variable=c("a","b")
 ```
 
-
-
 - ### 基础运算符和函数：如数学运算和描述性变量统计
 
 `sum()` 可以用来计算和 ` mean()` 可以用来计算平均数
@@ -25,7 +21,7 @@ variable=c("a","b")
 
 `sin()` `asin()` `cos()` `acos()` `tan()` `atan()` R中三角函数和反三角函数使用的是弧度制而非分度制
 
-取整函数`round()` `ceiling()` `floor()`：
+取整函数 `round()` `ceiling()` `floor()`：
 
 ```R
 #直接四舍五入取整仅有一个参数n, 在取整位是偶数的时候5会被舍去
@@ -45,13 +41,9 @@ variable=c("a","b")
 [1]4
 ```
 
-
-
 + ### 概率分布函数：`d` `p` `q` `r` 四种不同的分布函数
 
 **未完待续**
-
-
 
 + <h3 id="1">关于比较运算：赋值，运算符和输出值</h3>
 
@@ -69,7 +61,7 @@ fruitA_Num>fruitB_Num
 [1] FALSE
 ```
 
-R中的比较运算符只有这几种`==（等于）` `!=（不等于）` `>` `>=` `<` `<=` ，`=`在R中仅用于赋值，对于浮点数，使用`==`时需要注意如下：
+R中的比较运算符只有这几种 `==（等于）` `!=（不等于）` `>` `>=` `<` `<=` ，`=`在R中仅用于赋值，对于浮点数，使用 `==`时需要注意如下：
 
 ```R
 #因为使用优先精度算法，非整数只能储存为近似值，所以导致了数学含义上正确的表达式输出了不同的结果
@@ -92,7 +84,7 @@ R中的比较运算符只有这几种`==（等于）` `!=（不等于）` `>` `>
 near(x, y, tol = .Machine$double.eps^0.5)
 ```
 
-还有一种特殊的运算符`%in%`，表示属于，其运算结果是一个逻辑型向量
+还有一种特殊的运算符 `%in%`，表示属于，其运算结果是一个逻辑型向量
 
 ```R
 > c(1,3) %in% c(2,3,4)
@@ -102,14 +94,12 @@ near(x, y, tol = .Machine$double.eps^0.5)
 [1]TRUE TRUE
 ```
 
-函数`match(x,y)`和`%in%`有类似的效果，但时其不会返回布尔值，而是对x中的每一个元素返回其首次在y中出现的位置，找不到时返回缺失值
+函数 `match(x,y)`和 `%in%`有类似的效果，但时其不会返回布尔值，而是对x中的每一个元素返回其首次在y中出现的位置，找不到时返回缺失值
 
 ```R
 > match(c(1, 3), c(2,3,4,3))
 [1] NA  2
 ```
-
-
 
 + <h3 id="2">关于逻辑运算：运算符和含义</h3>
 
@@ -125,7 +115,7 @@ near(x, y, tol = .Machine$double.eps^0.5)
 
 ![](https://s3.bmp.ovh/imgs/2022/10/17/1f99f7f9eb3d53c1.png)
 
-`&&`和`||`：是仅对两个标量进行运算的与和或，如果有向量也仅使用第一个元素
+`&&`和 `||`：是仅对两个标量进行运算的与和或，如果有向量也仅使用第一个元素
 
 ```R
 > v=c(3,0,TRUE,2+2i)
@@ -160,8 +150,6 @@ near(x, y, tol = .Machine$double.eps^0.5)
 [1]FALSE
 ```
 
-
-
 + ### 关于逻辑运算函数：类型和返回值
 
 部分内容参考自[R语言教程](https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/prog-type-logi.html)
@@ -174,21 +162,23 @@ near(x, y, tol = .Machine$double.eps^0.5)
 
 **未完待续**
 
-------
+---
 
-## 关于vector：如何创建和处理向量 ##
+## 关于vector：如何创建和处理向量
+
 - ### `names()`用于给向量赋名
 
 ` names(vector)=c(a,b,c)`
 
 或者是
+
 ```R
 name=c(a,b,c)
 names(vector)=c(name)
 ```
 
-
 + ### 向量可以进行运算，如
+
 ```R
 poker_vector <- c(140, -50, 20, -120, 240)
 roulette_vector <- c(-24, -50, 100, -350, 10)
@@ -198,14 +188,13 @@ names(roulette_vector) <- days_vector
 total_daily <- poker_vector+roulette_vector
 ```
 
-
 + ### 选择向量中的具体值
+
 ````R
 vector[1] 
 vector[1,2]
 vector[1:3]
 ````
-
 
 - ### 一个关于筛选向量内符合条件内容并输出的例子
 
@@ -230,16 +219,16 @@ roulette_winning_days
 ```R
 roulette_winning_days
 Wednesday    Friday 
-      100        10 
+      100        10
 ```
 
-------
+---
 
-## 关于matrix：矩阵的创建、合并和运算 ##
+## 关于matrix：矩阵的创建、合并和运算
 
 + ### 构建一个矩阵
 
-使用`matrix()` 来构建矩阵 ，`byrow`用来表示按列填充，`nrow`用来表示矩阵行数
+使用 `matrix()` 来构建矩阵 ，`byrow`用来表示按列填充，`nrow`用来表示矩阵行数
 
 ```R
 matrix(1:9,byrow=TRUE,nrow=3)
@@ -254,8 +243,6 @@ matrix(1:9,byrow=TRUE,nrow=3)
 [2,]    4    5    6
 [3,]    7    8    9
 ```
-
-
 
 + ### 将vector合并成矩阵
 
@@ -283,11 +270,9 @@ star_wars_matrix
 [3,] 309.306 165.8
 ```
 
-
-
 + ### 给矩阵的行和列命名
 
-`rownames()` `colnames()` 
+`rownames()` `colnames()`
 
 ```R
 # Box office Star Wars (in millions!)
@@ -322,17 +307,15 @@ The Empire Strikes Back 290.475  247.9
 Return of the Jedi      309.306  165.8
 ```
 
-
-
 + ### 另一种给矩阵行列命名的方式
 
-直接使用`dimnames=list()`进行命名
+直接使用 `dimnames=list()`进行命名
 
 ```R
 box_office <- c(460.998, 314.4, 290.475, 247.900, 309.306, 165.8)
 region <- c("US", "non-US")
 titles <- c("A New Hope","The Empire Strikes Back","Return of the Jedi")
-               
+   
 star_wars_matrix <- matrix(box_office, nrow = 3, byrow = TRUE, dimnames = list(titles, region))
 
 star_wars_matrix
@@ -341,17 +324,15 @@ star_wars_matrix
 输出：
 
 ```R
-                             US non-US
+US non-US
 A New Hope              460.998  314.4
 The Empire Strikes Back 290.475  247.9
 Return of the Jedi      309.306  165.8
 ```
 
-
-
 + ### 合并矩阵和矩阵求和
 
-`rowSums()`按行求和，同理`colSums()`是按列求和
+`rowSums()`按行求和，同理 `colSums()`是按列求和
 
 `rbind()`给矩阵添加额外的行，`cbind()`给矩阵添加额外的列
 
@@ -374,16 +355,14 @@ all_wars_matrix
 worldwide_vector
 A New Hope    The Empire Strikes Back    Return of the Jedi 
    775.398                    538.375               475.106 
-                
-                
+  
+  
 all_wars_matrix
                              US non-US worldwide_vector
 A New Hope              460.998  314.4          775.398
 The Empire Strikes Back 290.475  247.9          538.375
 Return of the Jedi      309.306  165.8          475.106
 ```
-
-
 
 + ### 选择矩阵内元素
 
@@ -394,8 +373,6 @@ Return of the Jedi      309.306  165.8          475.106
 `my_matrix[,c]`选择第c列元素
 
 `my_matrix[r,]`选择第r行元素
-
-
 
 + ### 矩阵的运算
 
@@ -413,7 +390,6 @@ visitors_1 <- all_wars_matrix/ticket_prices_matrix
 vistors_1
 us_visitors <- visitors_1[,1]
 mean(us_visitors)
-
 ```
 
 输出：
@@ -439,10 +415,9 @@ Revenge of the Sith      77.61224  95.61224
 
 mean(us_visitors)
 [1] 75.01401
-
 ```
 
-**注意：**对于数学运算符号，如加减乘除，需要保证两组矩阵的大小完全一致，因为在R内，这种运算代表每一个矩阵位置上的元素进行相应的运算，如果想使用矩阵内积，即完成![](http://latex.codecogs.com/svg.latex?N*P)和![](http://latex.codecogs.com/svg.latex?P*M)矩阵的乘积并最后输出![](http://latex.codecogs.com/svg.latex?N*M)矩阵的话，需要使用运算符`%*%`
+**注意：**对于数学运算符号，如加减乘除，需要保证两组矩阵的大小完全一致，因为在R内，这种运算代表每一个矩阵位置上的元素进行相应的运算，如果想使用矩阵内积，即完成![](https://latex.codecogs.com/svg.image?\inline&space;\bg{white}N\times&space;P)和![](http://latex.codecogs.com/svg.latex?P*M)矩阵的乘积并最后输出![](http://latex.codecogs.com/svg.latex?N*M)矩阵的话，需要使用运算符 `%*%`
 
 ```R
 #如正确计算离散分布的平均数
@@ -462,13 +437,13 @@ mean(us_visitors)
 #non-comformable arrays即两个矩阵大小不同
 ```
 
-------
+---
 
-## 关于factor：未完待续 ##
+## 关于factor：未完待续
 
 + ### factor和vector的区别
 
-factor拥有属性`Levels` ，我个人理解为更适合统计学使用的纯粹值，使用`factor()`可将vector转换成factor
+factor拥有属性 `Levels` ，我个人理解为更适合统计学使用的纯粹值，使用 `factor()`可将vector转换成factor
 
 ```R
 # Sex vector
@@ -493,13 +468,11 @@ factor_sex_vector
 Levels: Female Male
 ```
 
-# R数据处理实操-主要来自 SOST 70011
-
-------
+# R数据处理实操-主要来自SOST 70011
 
 部分内容来自70011的Lab 2&3，[R语言笔记-缺失值的处理](https://blog.csdn.net/ethmery/article/details/109152730)，[心惊梦醒的笔记](https://www.jianshu.com/p/66118f431bf6)，以及[R语言中的管道](https://www.jianshu.com/p/c65dbce983dd)
 
-## 数据清洗：缺失值、添加数据和功能函数`filter()` `arrange()` `select()`
+## 数据清洗：缺失值、添加数据和功能函数 `filter()` `arrange()` `select()`
 
 + <h3 id="3">关于比较运算：赋值，运算符和输出值</h3>
 
@@ -510,9 +483,9 @@ Levels: Female Male
 [1]FALSE TRUE FALSE
 ```
 
-`na.rm`即remove NA，用于在函数中声明忽略缺失值，如数据中存在缺失值，部分函数只可对非缺失值进行运算，因此如果不提前将缺失值排除，会在最后的结果中返回`NA`
+`na.rm`即remove NA，用于在函数中声明忽略缺失值，如数据中存在缺失值，部分函数只可对非缺失值进行运算，因此如果不提前将缺失值排除，会在最后的结果中返回 `NA`
 
-**`NA`和所有的变量进行运算都会返回`NA`吗？**
+**`NA`和所有的变量进行运算都会返回 `NA`吗？**
 
 ```R
 #任何数的0次幂都是1
@@ -526,9 +499,7 @@ Levels: Female Male
 [1]NA
 ```
 
-
-
-+ ### 筛选函数`filter()` 
++ ### 筛选函数 `filter()`
 
 第一个参数为需要筛选的数据框，第二个以后的参数是需要筛选的条件，返回值是一个数据框
 
@@ -581,7 +552,9 @@ filter(flights, between(month,1,10))
 filter(flights, is.na(dep_time))
 ```
 
-------
++ 函数 `arrange()`
+
+---
 
 ## 总结统计数据：数据分组总结、实现复合操作和初步图像可视化
 
@@ -595,11 +568,9 @@ summarise(flights, delay = mean(dep_delay, na.rm = TRUE))
 
 **未完待续**
 
++ ### 实现复合操作：管道传参函数 `%>%`
 
-
-+ ### 实现复合操作：管道传参函数`%>%`
-
-来自于包`dplyr`，可以将前一步的结果直接传递给下一步，从而跳过赋值
+来自于包 `dplyr`，可以将前一步的结果直接传递给下一步，从而跳过赋值
 
 假设我们需要计算函数在![](http://latex.codecogs.com/svg.latex?f(x)=sin(x+1)^2)在![](http://latex.codecogs.com/svg.latex?x=4)处的值，在R中实现该步骤需要通过如下步骤：
 
@@ -612,6 +583,6 @@ f3 <- function(x){return(sin(x))}
 #计算c = sin(b)的值
 ```
 
-------
+---
 
 ## 假设检验：
