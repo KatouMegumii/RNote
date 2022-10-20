@@ -586,3 +586,4 @@ f3 <- function(x){return(sin(x))}
 ---
 
 ## 假设检验：
+test
