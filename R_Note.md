@@ -417,7 +417,7 @@ mean(us_visitors)
 [1] 75.01401
 ```
 
-**注意：**对于数学运算符号，如加减乘除，需要保证两组矩阵的大小完全一致，因为在R内，这种运算代表每一个矩阵位置上的元素进行相应的运算，如果想使用矩阵内积$M\times;N$，即完成![](https://latex.codecogs.com/svg.image?\inline&space;\bg{white}N\times&space;P)和![](http://latex.codecogs.com/svg.latex?P*M)矩阵的乘积并最后输出![](http://latex.codecogs.com/svg.latex?N*M)矩阵的话，需要使用运算符 `%*%`
+**注意：**对于数学运算符号，如加减乘除，需要保证两组矩阵的大小完全一致，因为在R内，这种运算代表每一个矩阵位置上的元素进行相应的运算，如果想使用矩阵内积$M\times N$，即完成![](https://latex.codecogs.com/svg.image?\inline&space;\bg{white}N\times&space;P)和![](http://latex.codecogs.com/svg.latex?P*M)矩阵的乘积并最后输出![](http://latex.codecogs.com/svg.latex?N*M)矩阵的话，需要使用运算符 `%*%`
 
 ```R
 #如正确计算离散分布的平均数
