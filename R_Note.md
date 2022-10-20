@@ -111,7 +111,7 @@ near(x, y, tol = .Machine$double.eps^0.5)
 
 `!` 非（not），`!A`在统计学上表示集合A的补集
 
-`xor`异或（exclusive or），`xor(A,B)`在统计学上表示集合AB的交集与补集差，即 $(\overline{A}\cap B)\cup (A\cap \overline{B})\$
+`xor`异或（exclusive or），`xor(A,B)`在统计学上表示集合AB的交集与补集差，即  $(\overline{A}\cap B)\cup (A\cap \overline{B})$
 
 ![](https://s3.bmp.ovh/imgs/2022/10/17/1f99f7f9eb3d53c1.png)
 
@@ -417,8 +417,7 @@ mean(us_visitors)
 [1] 75.01401
 ```
 
-**注意：**对于数学运算符号，如加减乘除，需要保证两组矩阵的大小完全一致，因为在R内，这种运算代表每一个矩阵位置上的元素进行相应的运算，如果想使用矩阵内积
-，即完成 $N\times P$ 和 $P\times M$ 矩阵的乘积并最后输出 $N\times M$ 矩阵的话，需要使用运算符 `%*%`
+**注意：**对于数学运算符号，如加减乘除，需要保证两组矩阵的大小完全一致，因为在R内，这种运算代表每一个矩阵位置上的元素进行相应的运算，如果想使用矩阵内积，即完成$N\times P$和$P\times M$矩阵的乘积并最后输出$N\times M$矩阵的话，需要使用运算符 `%*%`
 
 ```R
 #如正确计算离散分布的平均数
@@ -573,7 +572,7 @@ summarise(flights, delay = mean(dep_delay, na.rm = TRUE))
 
 来自于包 `dplyr`，可以将前一步的结果直接传递给下一步，从而跳过赋值
 
-假设我们需要计算函数在 $f(x)=sin(x+1)^{2}$ 在 $x=4$ 处的值，在R中实现该步骤需要通过如下步骤：
+假设我们需要计算函数在$f=sin(x+1)^2$在$x=4$处的值，在R中实现该步骤需要通过如下步骤：
 
 ```R
 f1 <- function(x){return(x+1)}
@@ -587,5 +586,3 @@ f3 <- function(x){return(sin(x))}
 ---
 
 ## 假设检验：
-test $N\times M$
-
