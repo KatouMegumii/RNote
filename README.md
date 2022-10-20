@@ -1,7 +1,6 @@
 # RNote
 
 **READ THE MARKDOWN FILES**  
-
 [Chapter1 Basic of R](https://github.com/KatouMegumii/RNote/blob/master/RNote1%5BBasic%20of%20R%5D.md)  
 [Chapter2 Vector, Matrix and Factor](https://github.com/KatouMegumii/RNote/blob/master/RNote2%5BVector%2C%20Matrix%20and%20Factor%5D.md)  
 [LabNote1 Data Cleaning](https://github.com/KatouMegumii/RNote/blob/master/RLabNote1%5BCleaning%20Data%5D.md)  
