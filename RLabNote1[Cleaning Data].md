@@ -27,6 +27,8 @@
 [1]NA
 ```
 
+------
+
 ## 筛选函数 `filter()`
 
 第一个参数为需要筛选的数据框，第二个以后的参数是需要筛选的条件，返回值是一个数据框
@@ -79,6 +81,8 @@ filter(flights, between(month,1,10))
 #筛选出丢失出发时间的数据，使用is.na可以轻松实现
 filter(flights, is.na(dep_time))
 ```
+
+------
 
 ## 函数 `arrange()`
 
