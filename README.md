@@ -1,8 +1,11 @@
 # RNote
 
-**READ THE FILE [R_Note.md](https://github.com/KatouMegumii/RNote/blob/master/R_Note.md)**
-
-学习R语言的个人笔记，主要参考datacamp和SOST70011课程中的内容，并从其他笔记中选取相关内容进行补充。
+**READ THE MARKDOWN FILE **
+[Chapter1 Basic of R](https://github.com/KatouMegumii/RNote/blob/master/RNote1%5BBasic%20of%20R%5D.md)
+[Chapter2 Vector, Matrix and Factor](https://github.com/KatouMegumii/RNote/blob/master/RNote2%5BVector%2C%20Matrix%20and%20Factor%5D.md)
+[LabNote1 Data Cleaning](https://github.com/KatouMegumii/RNote/blob/master/RLabNote1%5BCleaning%20Data%5D.md)
+[LabNote2 Summary Statistics](https://github.com/KatouMegumii/RNote/blob/master/RLabNote2%5BSummary%20Statistics%5D.md)
+[LabNote3 Hypothesis Testing](https://github.com/KatouMegumii/RNote/blob/master/RLabNote3%5BHypothesis%20Testing%5D.md)
 
 Individually notes on learning R programing and writtern in Chinese.
 
