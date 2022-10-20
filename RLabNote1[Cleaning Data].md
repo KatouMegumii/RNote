@@ -36,9 +36,9 @@
 filter(flights,month==1,day==1)
 ```
 
-第二个及以后的参数需要是一个表达式，关于表达式的内容可以参照[RNote1()
+第二个及以后的参数需要是一个表达式，关于表达式的内容可以参照[RNote1](https://github.com/KatouMegumii/RNote/blob/master/RLabNote1%5BCleaning%20Data%5D.md)
 
-同时该函数还可以使用逻辑运算，关于逻辑运算的内容依然参照[RNote1]()，相同的筛选条件通过不同的逻辑运算得到的结果最后是一致的
+同时该函数还可以使用逻辑运算，关于逻辑运算的内容依然参照[RNote1](https://github.com/KatouMegumii/RNote/blob/master/RLabNote1%5BCleaning%20Data%5D.md)，相同的筛选条件通过不同的逻辑运算得到的结果最后是一致的
 
 ```R
 #如通过不同的表达筛选出延迟时间在2小时以内的航班
