@@ -16,5 +16,3 @@ Reference：
 [心惊梦醒的笔记](https://www.jianshu.com/p/53c867211daa)
 [R语言中的管道](https://www.jianshu.com/p/c65dbce983dd)
 [R语言笔记-缺失值的处理](https://blog.csdn.net/ethmery/article/details/109152730)
-
-$N\times M$
