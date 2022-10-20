@@ -2,7 +2,7 @@
 
 部分内容来自70011的Lab 2&3，[R语言笔记-缺失值的处理](https://blog.csdn.net/ethmery/article/details/109152730)，[心惊梦醒的笔记](https://www.jianshu.com/p/66118f431bf6)，以及[R语言中的管道](https://www.jianshu.com/p/c65dbce983dd)
 
-<h2 id="3">关于比较运算：赋值，运算符和输出值</h2>
+<h2 id="1">关于缺失值：函数和运算</h2>
 
 `is.na()`可以用于判断对象中的每个元素是否为缺失值，输出的是布尔型向量
 
@@ -36,9 +36,9 @@
 filter(flights,month==1,day==1)
 ```
 
-第二个及以后的参数需要是一个表达式，关于表达式的内容可以参照[RNote1](https://github.com/KatouMegumii/RNote/blob/master/RLabNote1%5BCleaning%20Data%5D.md)
+第二个及以后的参数需要是一个表达式，关于表达式的内容可以参照[RNote1](https://github.com/KatouMegumii/RNote/blob/master/RNote1%5BBasic%20of%20R%5D.md)
 
-同时该函数还可以使用逻辑运算，关于逻辑运算的内容依然参照[RNote1](https://github.com/KatouMegumii/RNote/blob/master/RLabNote1%5BCleaning%20Data%5D.md)，相同的筛选条件通过不同的逻辑运算得到的结果最后是一致的
+同时该函数还可以使用逻辑运算，关于逻辑运算的内容依然参照[RNote1](https://github.com/KatouMegumii/RNote/blob/master/RNote1%5BBasic%20of%20R%5D.md)，相同的筛选条件通过不同的逻辑运算得到的结果最后是一致的
 
 ```R
 #如通过不同的表达筛选出延迟时间在2小时以内的航班
@@ -67,7 +67,7 @@ filter(flights,month==(11|12))
 
 `between(x,left,right)`，其中x是一个变量，该函数用于判断x中的元素是否在函数所规定的左界和右界中，最后的返回值是一个布尔型向量
 
-`is.na()`[前文](#3)已经有有提到，可以筛出不完整的数据
+`is.na()`[前文](#1)已经有有提到，可以筛出不完整的数据
 
 ```R
 > between(1:12,7,9)

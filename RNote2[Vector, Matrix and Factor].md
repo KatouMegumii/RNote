@@ -36,7 +36,7 @@ vector[1:3]
 
 ### 向量内容可以使用逻辑运算符进行筛选
 
-逻辑运算符的内容可以见[RNote1](https://github.com/KatouMegumii/RNote/blob/master/RLabNote1%5BCleaning%20Data%5D.md)
+逻辑运算符的内容可以见[RNote1](https://github.com/KatouMegumii/RNote/blob/master/RNote1%5BBasic%20of%20R%5D.md)
 
 ```R
 # Poker and roulette winnings from Monday to Friday:
