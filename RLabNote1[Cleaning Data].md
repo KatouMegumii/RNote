@@ -96,7 +96,7 @@ filter(flights, is.na(dep_time))
 
 `arrange(.data,...,.by_group=FALSE)`
 
-其中第一个参数是数据集，必须是R支持的数据框架下的数据集（如使用data.frame或者tibble所得到的数据集）
+其中第一个参数是数据集，必须是R支持的数据框架下的数据集（如使用`data.frame()`或者`tibble()`所得到的数据集）
 
 第二个参数是数据框中的变量名，可以支持多个变量名同时排序，但是排序的结果永远是前序参数排列完成后再按照后续参数排列
 
@@ -181,6 +181,18 @@ arrange(flights,desc(year))
 
 `select()`中的变量可以使用多种方式来表示，同样也包括使用逻辑运算
 
-```R
+**注意：**
 
+1. 取反除了使用通用逻辑符号`!`之外，还可以使用符号`-`，两者的效果是完全一样的
+
+2. `,`在`select()`函数中和在`arrange()` `filter()`中表达的逻辑含义是不同的，执行的逻辑和输出的结果也不同
+
+在`arrange()`中多个变量通过`,`并列，会优先按照第一个变量排序，后一个变量会改变前一个排序的结果
+
+```R
+arrange(flights,year,month,day)
+arrange(flights,year|month|day)
 ```
+
+`se
+
