@@ -168,7 +168,7 @@ near(x, y, tol = .Machine$double.eps^0.5)
 
 部分内容参考自[R语言教程](https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/prog-type-logi.html)
 
-`all()` `any()` `which`()
+`all()` `any()` `which()`
 
 `identical(x,y)` `all.equal()`
 
