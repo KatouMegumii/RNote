@@ -6,7 +6,7 @@
 [LabNote1 Data Cleaning](https://github.com/KatouMegumii/RNote/blob/master/RLabNote1%5BCleaning%20Data%5D.md)  
 [LabNote2 Summary Statistics](https://github.com/KatouMegumii/RNote/blob/master/RLabNote2%5BSummary%20Statistics%5D.md)  
 [LabNote3 Hypothesis Testing](https://github.com/KatouMegumii/RNote/blob/master/RLabNote3%5BHypothesis%20Testing%5D.md)  
-[ExtraNote1] Regular Expression()  
+[ExtraNote1 Regular Expression](https://github.com/KatouMegumii/RNote/blob/master/RNoteExtra1%5BRegular%20Expression%5D.md)  
 
 Individually notes on learning R programing and written in Chinese.  
 Based on R Programming track on [Datacamp](https://app.datacamp.com/learn/skill-tracks/r-programming), you can access more via the link.  
