@@ -25,7 +25,7 @@ I also have summarized the knowledge of Lab Tutorials of ***SOST 70011 Introduct
 
 
 ---
-### **Reference** 
+### **References** 
 [R语言教程](https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/index.html)  
 [编程宝库：R语言教程](https://www.runoob.com/r/r-tutorial.html)  
 [心惊梦醒的笔记](https://www.jianshu.com/p/53c867211daa)  
