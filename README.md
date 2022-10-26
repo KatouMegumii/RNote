@@ -6,8 +6,9 @@
 [LabNote1 Data Cleaning](https://github.com/KatouMegumii/RNote/blob/master/RLabNote1%5BCleaning%20Data%5D.md)  
 [LabNote2 Summary Statistics](https://github.com/KatouMegumii/RNote/blob/master/RLabNote2%5BSummary%20Statistics%5D.md)  
 [LabNote3 Hypothesis Testing](https://github.com/KatouMegumii/RNote/blob/master/RLabNote3%5BHypothesis%20Testing%5D.md)  
+[ExtraNote1] Regular Expression()  
 
-Individually notes on learning R programing and writtern in Chinese.  
+Individually notes on learning R programing and written in Chinese.  
 Based on R Programming track on [Datacamp](https://app.datacamp.com/learn/skill-tracks/r-programming), you can access more via the link.  
 Add more materials from SOST70011 and reference from other tutorials.
 
@@ -17,3 +18,5 @@ Reference：
 [心惊梦醒的笔记](https://www.jianshu.com/p/53c867211daa)  
 [R语言中的管道](https://www.jianshu.com/p/c65dbce983dd)  
 [R语言笔记-缺失值的处理](https://blog.csdn.net/ethmery/article/details/109152730)  
+[正则表达式](https://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+[正则\1\2和\\1的理解](https://blog.csdn.net/liangf05/article/details/79361191)
