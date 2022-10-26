@@ -16,12 +16,15 @@
 [ExtraNote1 Regular Expression](https://github.com/KatouMegumii/RNote/blob/master/RNoteExtra1%5BRegular%20Expression%5D.md)  
 
 ---
-### **My words**
-Individually notes on learning R programing and written in Chinese.  
-Based on R Programming track on [Datacamp](https://app.datacamp.com/learn/skill-tracks/r-programming), you can access more via the link.  
-Add more materials from SOST70011 and reference from other tutorials.
+### **My Words**
+These are my individual notes on learning R programing and because of my poor english, they are written in Chinese, please contact me if I write anything wrong. It's perfect if you'd like help me to add contents and complete my notes.  
+
+The notes are based on ***R Programming Track*** on [Datacamp](https://app.datacamp.com/learn/skill-tracks/r-programming), you can access more via the link. If you are my classmates of SRMS and have any questions in learning R, please share your questions with me, you problems may also be my problems, let's solve it!  
+
+I also have summarized the knowledge of Lab Tutorials of ***SOST 70011 Introduction to Statistical Modelling***, and added more contents from other tutorials. The additional contents are based on my learning experience, you may not need to study at my pace, it's better for you to use these notes as wiki. ~~(later I will try to construst these notes to a wiki format, you can access more easily)~~
 
 
+---
 ### **Reference** 
 [R语言教程](https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/index.html)  
 [编程宝库：R语言教程](https://www.runoob.com/r/r-tutorial.html)  
